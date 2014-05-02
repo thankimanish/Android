@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hdik.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/applicationId" />
+
+        <activity android:name="MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".simpleparsing.ParsingActivity" >
+        </activity>
+        <activity android:name="com.hdik.main.tabfragment.main.FragmentTabHostActivity" >
+        </activity>
+        <activity android:name=".fragmentapp.MainFragmentActivity" >
+        </activity>
+        <activity android:name=".listviewfilter.ListViewFilterActivity" >
+        </activity>
+        <activity android:name=".twitterdemo.TwitterDemoActivity" >
+        </activity>
+        <activity android:name=".twitterdemo.TwitterLogin" >
+        </activity>
+        <activity android:name=".listviewmultichoice.ListViewMultiChoice" >
+        </activity>
+        <activity android:name=".db.EmployeeMainActivity" >
+        </activity>
+        <activity android:name=".db.InsertEmployeeActivity" >
+        </activity>
+        <activity android:name=".db.ViewEmployeeActivity" >
+        </activity>
+        <activity android:name=".db.UpdateEmployeeActivity" >
+        </activity>
+        <activity android:name=".fbdemo.FBLogin" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

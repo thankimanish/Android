@@ -1,0 +1,2 @@
+just copy paste below and its genrate a fb key for debug key store (when u deploy application replace debug.keystore to yourapp.keystore.)
+keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
